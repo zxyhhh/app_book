@@ -1,0 +1,115 @@
+/*
+* @Author: zxy
+* @Date:   2018-01-04 17:20:29
+* @Last Modified by:   zxy
+* @Last Modified time: 2018-01-04 21:52:09
+*/
+@font-face {
+  font-family: 'iconfont';
+  src: url("font/iconfont.eot");
+  src: url("font/iconfont.eot?#iefix") format("embedded-opentype"), url("font/iconfont.woff") format("woff"), url("font/iconfont.ttf") format("truetype"), url("font/iconfont.svg#iconfont") format("svg");
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  text-align: left;
+  width: 100%;
+  overflow: hidden;
+  background: #e9dfc7;
+}
+
+.container {
+  font-size: 14px;
+  color: #555;
+  line-height: 31px;
+}
+.container .a_container {
+  margin: 0 5px 0;
+}
+.container .a_container h4 {
+  font-size: 20px;
+  color: #736357;
+  border-bottom: 1px solid #736357;
+  letter-spacing: 2px;
+}
+.container .a_container p {
+  text-indent: 2em;
+  margin: 0.5em 0;
+  line-height: 24px;
+}
+.container .btns {
+  width: 70%;
+  max-width: 800px;
+  padding: 5px;
+  margin: 0 auto;
+}
+.container .btns .tabs {
+  height: 34px;
+  margin: 10px auto;
+  line-height: 34px;
+  border-radius: 8px;
+  border: 1px solid #658382;
+  font-size: 12px;
+  background: #000;
+  opacity: 0.9;
+}
+.container .btns .tabs li {
+  display: inline-block;
+  width: 49%;
+  text-align: center;
+  border-right: 1px solid #858382;
+  color: #fff;
+}
+.container .btns .tabs li:nth-child(2) {
+  border-right: none;
+}
+.container .top-nav {
+  position: fixed;
+  top: 0;
+  height: 50px;
+  width: 100%;
+  z-index: 2;
+  background: #000;
+}
+.container .top-nav .icon-back {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #fff;
+  border-left: none;
+  border-bottom: none;
+  transform: rotate(-135deg);
+  position: relative;
+  top: 8px;
+  left: 15px;
+}
+.container .top-nav .nav-title {
+  color: #d5d5d6;
+  position: absolute;
+  top: 8px;
+  left: 42px;
+}
+.container .footer-nav {
+  position: fixed;
+  bottom: 0;
+  height: 100px;
+  background: #000;
+  width: 100%;
+  padding-right: 10px;
+  z-index: 2;
+}
+.container .footer-nav span {
+  display: inline-block;
+  width: 23%;
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
+/*# sourceMappingURL=index.css.map */
