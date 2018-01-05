@@ -17,20 +17,28 @@
   //           // console.log(ch);
 		// })()
 		//初始缩放比例  屏幕/设计图
+
 	</script>
-	<script src="lib/zepto.min.js"></script>
+    <script src="lib/zepto.min.js"></script>
+    <script type="text/javascript">window.jQuery=$;</script>
+	
+    <script src="js/jquery.base64.js"></script>
+    <script src="js/jquery.jsonp.js"></script>
 </head>
 <body>
     <div class="container">
-        <div id="top-nav" class="top-nav">
+        <div class="m-artical-action">
+            <div class="artical-action" id="action-mid"></div>
+        </div>
+        <div id="top-nav" class="top-nav" style="display: none;">
         	<span class="icon-back" id="icon-back"></span>
         	<span class="nav-title">返回书架</span>
         </div>
-        <div id="footer-nav" class="footer-nav">
+        <div id="footer-nav" class="footer-nav" style="display: none;">
         	<span class="iconfont">&#xe682;<br>目录</span>
-        	<span class="iconfont">Aa<br>字体</span>
-        	<span class="iconfont">&#xe600;<br>夜间</span>
-        	<span class="iconfont" style="display: none;">&#xe6e8;白天</span>
+        	<span class="iconfont" id="font-button">Aa<br>字体</span>
+        	<span class="iconfont" id="night-btn">&#xe600;<br>夜间</span>
+        	<span class="iconfont" id="noon-btn" style="display: none;">&#xe6e8;白天</span>
         </div>
     	<div class="a_title"></div>
     	<div class="a_container">
@@ -45,11 +53,34 @@
     			<li id="next">下一章</li>
     		</ul>
     	</div>
+        <div class="nav-panel-bk font-container" style="display: none;"></div>
+        <div class="nav-panel font-container" id="font-container" style="display: none;">
+            <div class="ch-mod">
+                <span>字号</span>
+                <button id="large-font">大</button>
+                <button id="small-font">小</button>
+            </div>
+            <div class="ch-mod">
+                <span>背景</span>
+                <div class="bk-container">
+                    <div class="bk-container-current"></div>
+                </div>
+                <div class="bk-container">
+                    <div class="bk-container-current"></div>
+                </div>
+                <div class="bk-container">
+                    <div class="bk-container-current"></div>
+                </div>
+                <div class="bk-container">
+                    <div class="bk-container-current"></div>
+                </div>
+                <div class="bk-container">
+                    <div class="bk-container-current"></div>
+                </div>
+            </div>
+        </div>
     </div>
-<script type="text/javascript">
-	// document.getElementById('icon-back').onclick=function(){
-	// 	alert(22);
-	// }
+<script type="text/javascript" src="js/index.js">
 </script>
 </body>
 </html>
